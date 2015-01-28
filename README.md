@@ -1,14 +1,11 @@
 ##
 
-This a layer on top of the builtin `http.request` to handle load balancing etc. Most of the defaults apply.
+This a layer on top of the builtin `http.request` and mikeals's `request` to handle load balancing etc. Most of the defaults apply.
 
-You set the servers to use for requests, and then when making a request just supply the path+qs+headers.
 
 _ While in pre 1.0.0 release just assume every version breaks things :-) _
 
 ## Usage
-
-See '/scratch' for more. You'll probably interested in the seaport aware one.
 
 
 ```
