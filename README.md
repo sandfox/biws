@@ -43,13 +43,18 @@ A valid 'ServerList' is any object with a 'getServers' method that return an arr
 
 Write some unit tests.....
 
-Making requests before SeaportServerList has synced will fail.
-You can listen to SeaportServerList.port.on('synced') but that is derp...
+- Making requests before SeaportServerList has synced will fail.
+  You can listen to SeaportServerList.port.on('synced') but that is derp...
 
-HttpClient should just be a client and hide away HTTP/HTTPS/SPDY underneath.
+- HttpClient should just be a client and hide away HTTP/HTTPS/SPDY underneath.
+- Agent can probably handle this abstraction fun for us (and connection priming)
 
-Add in metrics.
-Create a AWS AZ aware load balancer.
-Abstract out dynamic/servie-discovery aware ServiceLists somehow.
-Prime / prewarming connections
-healthchecks?
+- Add in metrics.
+- Create a AWS AZ aware load balancer.
+- Abstract out dynamic/servie-discovery aware ServiceLists somehow.
+- Prime / prewarming connections
+- Healthchecks?
+- Make alot of things configurable
+
+The seaport server list is too strongly tied to seaport, seaport goes down, everything goes down...
+Maybe we should cache the list, or make the serverList updater a seperate module...

@@ -1,7 +1,7 @@
 {
   "name": "biws",
-  "version": "0.0.1",
-  "description": "seaport aware http request client",
+  "version": "0.0.2",
+  "description": "seaport aware load balancing http request client",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
