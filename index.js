@@ -34,7 +34,7 @@ module.exports.createClient = function(opts){
 
     if(opts.servers) {
         opts.servers.forEach(function(srv){
-            serverList.addServer(new Server(srv.port, srv.host));
+            serverList.addServer(new Server(srv.protocol, srv.port, srv.host));
         })
     }
 

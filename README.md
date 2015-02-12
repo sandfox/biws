@@ -11,8 +11,8 @@ _ While in pre 1.0.0 release just assume every version breaks things :-) _
 ```
 var opts = {
     servers : [
-        { host: 'localhost', port: 8000},
-        { host: 'localhost', port: 8001}
+        { protocol: 'http', host: 'localhost', port: 8000},
+        { protocol: 'http', host: 'localhost', port: 8001}
     ]
 }
 

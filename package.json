@@ -1,6 +1,6 @@
 {
   "name": "biws",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "seaport aware load balancing http request client",
   "main": "index.js",
   "scripts": {
