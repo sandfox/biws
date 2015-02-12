@@ -1,7 +1,12 @@
 {
   "name": "biws",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "seaport aware load balancing http request client",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/sandfox/biws.git"
+  },
+  "bugs" : "https://github.com/sandfox/biws/issues",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
